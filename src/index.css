@@ -2050,3 +2050,53 @@ body{
     width: 100%;
   }
 }
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-form {
+    flex-direction: column;
+  }
+
+  .planner-form input,
+  .planner-form button {
+    width: 100%;
+  }
+
+  .hero-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-quote {
+    width: 100%;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
