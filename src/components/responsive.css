@@ -1,0 +1,508 @@
+/* =======================================================
+                STUDYFLOW AI RESPONSIVE CSS
+=======================================================*/
+/* =======================================================
+                STUDYFLOW AI RESPONSIVE CSS
+======================================================= */
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:992px){
+
+    .main-content{
+        padding:24px;
+    }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px){
+
+    *{
+        box-sizing:border-box;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .app-layout{
+        display:block;
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:18px;
+
+    }
+
+    section{
+
+        width:100%;
+
+    }
+
+}
+
+/* =========================
+   Small Phones
+========================= */
+
+@media (max-width:480px){
+
+    .main-content{
+
+        padding:15px;
+
+    }
+
+}
+
+/* ---------- Large Laptop ---------- */
+
+@media (max-width:1400px){
+
+}
+
+
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1200px){
+
+}
+
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+}
+
+
+
+/* ---------- Mobile ---------- */
+
+/* ======================================
+      MOBILE (768px and below)
+====================================== */
+
+@media (max-width:768px){
+
+/* --------------------------
+   APP LAYOUT
+-------------------------- */
+
+.app-layout{
+    display:block;
+}
+
+.main-content{
+    width:100%;
+    margin-left:0;
+    padding:20px;
+}
+
+/* --------------------------
+   SIDEBAR
+-------------------------- */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-280px;
+    width:260px;
+    height:100vh;
+
+    z-index:1000;
+
+    transition:.35s ease;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.sidebar.active{
+    left:0;
+}
+
+/* --------------------------
+   NAVBAR
+-------------------------- */
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.search-box{
+    flex:1;
+    min-width:180px;
+}
+
+.search-box input{
+    width:100%;
+}
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.profile-btn{
+
+    padding:8px 12px;
+
+}
+
+.profile-btn h4{
+
+    display:none;
+
+}
+
+.profile-btn p{
+
+    display:none;
+
+}
+
+.profile-avatar{
+
+    width:42px;
+    height:42px;
+
+}
+
+.streak-badge{
+
+    display:none;
+
+}
+
+.notification-btn{
+
+    width:45px;
+    height:45px;
+
+}
+
+/* --------------------------
+   PAGE TITLES
+-------------------------- */
+
+h1{
+
+    font-size:38px !important;
+
+}
+
+}
+
+
+
+/* ---------- Small Mobile ---------- */
+
+/* ======================================
+      SMALL PHONES
+====================================== */
+
+@media (max-width:480px){
+
+.main-content{
+
+    padding:15px;
+
+}
+
+.navbar{
+
+    gap:12px;
+
+}
+
+.search-box{
+
+    order:2;
+    width:100%;
+
+}
+
+.navbar-right{
+
+    order:1;
+
+}
+
+.profile-avatar{
+
+    width:38px;
+    height:38px;
+
+}
+
+.notification-btn{
+
+    width:42px;
+    height:42px;
+
+}
+
+.search-box input{
+
+    font-size:14px;
+
+}
+
+h1{
+
+    font-size:32px !important;
+
+}
+
+}
+/* =========================
+      DASHBOARD HERO
+========================= */
+
+@media(max-width:768px){
+
+.dashboard-hero{
+
+    gap:18px;
+
+}
+
+.hero-title{
+
+    font-size:36px;
+
+}
+
+.hero-subtitle{
+
+    font-size:16px;
+
+}
+
+.quote-card{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    font-size:16px;
+
+}
+
+}
+
+/*==================================================
+                DASHBOARD
+==================================================*/
+
+@media (max-width:768px){
+
+.dashboard-hero{
+
+    margin-top:20px;
+
+}
+
+/* Quote */
+
+.quote-card{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+}
+
+.quote-card p{
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* KPI Cards */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.stat-card{
+
+    padding:22px;
+
+    min-height:180px;
+
+}
+
+.stat-card h2{
+
+    font-size:48px;
+
+}
+
+.stat-card h4{
+
+    font-size:18px;
+
+}
+
+.stat-card p{
+
+    font-size:15px;
+
+}
+/*==================================================
+                SCHEDULE
+==================================================*/
+
+@media(max-width:768px){
+
+.schedule-section{
+
+    margin-top:30px;
+
+}
+
+.schedule-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+}
+
+.calendar-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.day-column{
+
+    width:100%;
+
+}
+
+}
+}
+/*==================================================
+            BOTTOM GRID
+==================================================*/
+
+@media(max-width:768px){
+
+.bottom-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+}
+/*==================================================
+            AI ASSISTANT
+==================================================*/
+
+@media(max-width:768px){
+
+.ai-widget{
+
+    padding:24px;
+
+}
+
+.ai-content h3{
+
+    font-size:32px;
+
+}
+
+.ai-content p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+.ai-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+}
+@media(max-width:480px){
+
+.stats-grid{
+
+    gap:14px;
+
+}
+
+.stat-card{
+
+    min-height:160px;
+
+    padding:18px;
+
+}
+
+.stat-card h2{
+
+    font-size:38px;
+
+}
+
+.quote-card{
+
+    padding:16px;
+
+}
+
+.ai-content h3{
+
+    font-size:28px;
+
+}
+
+}
