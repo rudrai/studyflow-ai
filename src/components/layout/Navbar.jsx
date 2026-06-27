@@ -1,15 +1,27 @@
-import { Search, Bell, Flame } from "lucide-react";
+import { Search, Bell, Flame, Menu } from "lucide-react";
 
-function Navbar() {
+function Navbar({ openSidebar }) {
   return (
     <nav className="navbar">
 
-      <div className="search-box">
-        <Search size={20} />
-        <input
-          type="text"
-          placeholder="Search anything..."
-        />
+      <div className="navbar-left">
+
+        <button
+          className="menu-btn"
+          onClick={openSidebar}
+        >
+          <Menu size={24} />
+        </button>
+
+        <div className="search-box">
+          <Search size={20} />
+
+          <input
+            type="text"
+            placeholder="Search anything..."
+          />
+        </div>
+
       </div>
 
       <div className="navbar-right">
@@ -24,6 +36,7 @@ function Navbar() {
         </button>
 
         <div className="profile-btn">
+
           <div className="profile-avatar">
             R
           </div>
@@ -32,6 +45,7 @@ function Navbar() {
             <h4>Rudra</h4>
             <p>Student</p>
           </div>
+
         </div>
 
       </div>
